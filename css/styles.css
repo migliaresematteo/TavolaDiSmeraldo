@@ -88,7 +88,7 @@ body {
 	border: none !important;
    }
 
-hr.divider {
+.divider {
 	height: 0.2rem;
 	max-width: 3.25rem;
 	margin: 0.5rem auto;
@@ -121,7 +121,7 @@ hr.divider {
 #mainNav .navbar-nav .nav-item .nav-link.active {
 	color: var(--lightgreen) !important;
 }
-header.masthead {
+.masthead {
 	padding-top: 10rem;
 	padding-bottom: calc(10rem - 4.5rem);
 	background: linear-gradient(to bottom, #2f3627a0 60%, var(--pearl) 100%), url("../assets/img/bg-masthead.jpg");
@@ -134,24 +134,29 @@ header.masthead {
 .title-text {
 	transform: translateY(-7.5%);
 }
+.title {
+	white-space: nowrap;
+	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
 
 /*MEDIA QUERIES*/
 
 @media (min-width: 1200px) {
-	header.masthead h1, header.masthead .h1 {
+	.masthead h1, .masthead .h1 {
 		font-size: 3.5rem;
 	}
 }
 @media (min-width: 992px) {
-	header.masthead {
+	.masthead {
 		min-height: 40rem;
 		padding-top: 4.5rem;
 		padding-bottom: 0;
 	}
-	header.masthead p {
+	.masthead p {
 		font-size: 1.15rem;
 	}
-	header.masthead h1, header.masthead .h1 {
+	.masthead h1, .masthead .h1 {
 		font-size: 3rem;
 	}
 	#mainNav {
@@ -213,3 +218,31 @@ header.masthead {
 		padding: 0.4rem 2rem;
 	}
 }
+
+@-webkit-keyframes tracking-in-contract {
+	0% {
+	  letter-spacing: 0.3rem;
+	  opacity: 0;
+	}
+	40% {
+	  opacity: 0.6;
+	}
+	100% {
+	  letter-spacing: normal;
+	  opacity: 1;
+	}
+  }
+  @keyframes tracking-in-contract {
+	0% {
+	  letter-spacing: 0.3rem;
+	  opacity: 0;
+	}
+	40% {
+	  opacity: 0.6;
+	}
+	100% {
+	  letter-spacing: normal;
+	  opacity: 1;
+	}
+  }
+
