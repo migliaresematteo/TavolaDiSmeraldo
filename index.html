@@ -1,245 +1,263 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>Tavola di Smeraldo</title>
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
-</head>
-<body id="page-top">
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 text-sm-center" id="mainNav">
-    <div class="container px-4 px-lg-5">
-      <a class="navbar-brand" href="#page-top">Tavola di Smeraldo</a>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto my-2 my-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Conoscici</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Progetti</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#events">Eventi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contattaci</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <header id="home" class="masthead">
-    <div class="container px-4 px-lg-5 h-100">
-      <div class="title-text row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-        <div class="col-lg-8 align-self-end">
-          <h1 class="text-white title font-weight-bold">Tavola di Smeraldo</h1>
-          <hr class="divider">
-        </div>
-        <div class="col-lg-8 align-self-baseline">
-          <p class="hero-text mb-2">Associazione di promozione sociale</p><a href="#about"><button class="action-btn">Scopri altro...</button></a>
-        </div>
-      </div>
-    </div>
-  </header>
-  <section id="about" class="py-5">
-    <div class="container px-4 px-lg-5">
-      <h2 class="text-center mt-0">Conoscici</h2>
-      <hr class="divider">
-      <div class="row gx-4 gx-lg-5">
-        <div class="col-md-6 text-center">
-          <div class="mt-5">
-            <img class="mb-3 img-fluid" src="https://via.placeholder.com/600x350" alt="600x350">
-            <h3 class="h4 mb-2">Chi siamo</h3>
-            <p class="text-muted mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus iusto perspiciatis deleniti optio ducimus sit, doloribus molestiae adipisci reprehenderit debitis libero? Incidunt totam neque modi nisi nulla consectetur quos deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sed distinctio, laudantium nam quidem doloremque, debitis obcaecati soluta earum molestias assumenda ex reiciendis pariatur maiores blanditiis. Itaque eos quae atque.</p><a href="#about"><button class="action-btn my-3">Scopri altro...</button></a>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tavola Di Smeraldo è una associazione promozione sociale">
+    <meta name="keywords" content="Volpiano, Torino, Eventi, Progetti">
+    <meta name="author" content="Matteo Migliarese">
+    <title>Tavola Di Smeraldo</title>
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Jost:wght@500&display=swap" rel="stylesheet">
+
+    <!--CSS Bootstrap Library-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--Compiled CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--AOS CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--Vanilla JS-->
+    <script defer src="main.js"></script>
+    <script defer src="AOS.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-2 text-sm-center" id="mainNav">
+        <div class="container px-4">
+          <a href="#page-top">
+            <img class="navbar-brand" src="images/TDSLogo.png" alt="Logo">
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0">
+              <li class="px-3 py-lg-0 py-2 nav-item all-centered color-lg">
+                <i class="fa-solid fa-house"></i> <a class="color-lg text-decoration-none font-normal fw-bolder mx-2" href="#home">Home</a>
+              </li>
+              <li class="px-3 py-lg-0 py-2 nav-item all-centered color-lg">
+                <i class="fa-solid fa-users"></i> <a class="color-lg text-decoration-none font-normal fw-bolder mx-2" href="#about">Conoscici</a>
+              </li>
+              <li class="px-3 py-lg-0 py-2 nav-item all-centered color-lg">
+                <i class="fa-solid fa-diagram-project"></i> <a class="color-lg text-decoration-none font-normal fw-bolder mx-2" href="#projects">Progetti</a>
+              </li>
+              <li class="px-3 py-lg-0 py-2 nav-item all-centered color-lg">
+                <i class="fa-solid fa-calendar-days"></i> <a class="color-lg text-decoration-none font-normal fw-bolder mx-2" href="#events">Eventi</a>
+              </li>
+              <li class="px-3 py-lg-0 py-2 nav-item all-centered color-lg">
+                <i class="fa-solid fa-message"></i> <a class="color-lg text-decoration-none font-normal fw-bolder mx-2" href="#contacts">Contattaci</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-6 text-center">
-          <div class="mt-5">
-            <img class="mb-3 img-fluid" src="https://via.placeholder.com/600x350" alt="600x350">
-            <h3 class="h4 mb-2">La nostra storia</h3>
-            <p class="text-muted mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus iusto perspiciatis deleniti optio ducimus sit, doloribus molestiae adipisci reprehenderit debitis libero? Incidunt totam neque modi nisi nulla consectetur quos deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sed distinctio, laudantium nam quidem doloremque, debitis obcaecati soluta earum molestias assumenda ex reiciendis pariatur maiores blanditiis. Itaque eos quae atque.</p><a href="#about"><button class="action-btn my-3">Scopri altro...</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="projects" class="py-5">
-    <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <h2 class="text-center mt-5">Progetti</h2>
+      </nav>
+
+      <header class="all-centered flex-column h-100" id="home">
+        <h1 class="header-title font-title space-nowrap">Tavola di Smeraldo</h1>
         <hr class="divider">
-        <div class="row my-4">
-          <div class="col-md-6"><img class="img-fluid h-100" src="https://via.placeholder.com/750x500" alt="750x500"></div>
-          <div class="side col-md-6">
-            <div class="project-description">
-              <h3 class="mb-3">Progetto primario</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-            </div><a href="#about"><button class="action-btn">Scopri altro...</button></a>
+        <p class="header-paragraph font-normal space-nowrap">Associazione di promozione sociale</p>
+        <a class="main-btn mt-2 text-decoration-none" href="#about">Scopri altro...</a>
+        <div class="d-none d-lg-block scrolldown mt-5">
+          <div class="chevrons">
+              <div class="chevrondown"></div>
+              <div class="chevrondown"></div>
           </div>
-        </div>
-        <h3 class="my-4">Altri progetti</h3>
-        <div class="row mt-5">
-          <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#"><img class="img-fluid" src="https://via.placeholder.com/500x300" alt="500x300">
-            <h4 class="mx-1 my-2 card-title">Progetto 1</h4>
-            <p class="mx-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A autem voluptate recusandae nesciunt nihil. Fugit.</p></a>
-          </div>
-          <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#"><img class="img-fluid" src="https://via.placeholder.com/500x300" alt="500x300">
-            <h4 class="mx-1 my-2 card-title">Progetto 2</h4>
-            <p class="mx-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A autem voluptate recusandae nesciunt nihil. Fugit.</p></a>
-          </div>
-          <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#"><img class="img-fluid" src="https://via.placeholder.com/500x300" alt="500x300">
-            <h4 class="mx-1 my-2 card-title">Progetto 3</h4>
-            <p class="mx-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A autem voluptate recusandae nesciunt nihil. Fugit.</p></a>
-          </div>
-          <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#"><img class="img-fluid" src="https://via.placeholder.com/500x300" alt="500x300">
-            <h4 class="mx-1 my-2 card-title">Progetto 4</h4>
-            <p class="mx-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A autem voluptate recusandae nesciunt nihil. Fugit.</p></a>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
-  <section id="events" class="py-5">
-    <div class="container px-4 px-lg-5">
-      <h2 class="text-center mt-5">Eventi</h2>
-      <hr class="divider">
-      <div class="row mt-5">
-        <div class="col-lg-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="img-fluid" src="https://via.placeholder.com/700x400" alt="700x400"></a>
-            <div class="my-3 mx-1">
-              <h4 class="card-title"><a class="card-title" href="#">Evento 1</a></h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+      </header>
+
+      <section class="bg-pearl py-5" id="about">
+        <div class="container all-centered flex-column">
+          <h2>Conoscici</h2>
+          <div data-aos="fade-up" class="row py-5">
+            <div class="col-lg-6">
+              <img class="w-100 h-100 object-fit-cover round" src="images/proxy.jpg" alt="Image">
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-lg-start">
+              <h3 class="font-title mt-lg-0 mt-3">Chi siamo</h3>
+              <div class="d-flex">
+                <span class="mb-2 fw-bolder">26/02/2023</span>
+              </div>
+              <p>L'Associazione è un'organizzazione senza scopo di lucro che si dedica all'approfondimento della storia dell'Inquisizione e della stregoneria in stretta collaborazione con il noto antropologo torinese Dott. Massimo Centini. Il nostro obiettivo è quello di esplorare e comprendere il concetto di oppressione del debole e del diverso, di emarginazione sociale e di capro espiatorio, temi che hanno caratterizzato la nostra civiltà fin dalla notte dei tempi.
+
+                La storia dell'Inquisizione e della stregoneria è stata spesso travisata e mal interpretata nel corso dei secoli. Invece di essere viste come esempi di persecuzione e discriminazione, le vicende legate a queste pratiche dovrebbero essere analizzate in profondità per comprendere le cause e i motivi che hanno portato alla loro diffusione e al loro perpetuarsi.</p>
+              <a class="main-btn text-decoration-none">Scopri altro</a>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="hf-400 row flex-md-row-reverse py-5">
+            <div class="col-lg-6">
+              <img class="w-100 h-100 object-fit-cover round" src="images/proxy.jpg" alt="Image">
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start align-items-lg-end text-lg-end">
+              <h3 class="font-title mt-lg-0 mt-3">La nostra storia</h3>
+              <div class="d-flex">
+                <span class="mb-2 fw-bolder">26/02/2023</span>
+              </div>
+              <p>La Tavola di Smeraldo è una Associazione di Promozione Sociale che ha le sue radici nel Circolo Culturale omonimo fondato nel 2008 e registrato nel 2009. L'APS è attivamente impegnata nell'organizzazione del Premio Letterario dedicato ad Enrico Furlini e svolge ricerche sulla storia dell'Inquisizione e della stregoneria in collaborazione con l'antropologo torinese Massimo Centini. Da diversi anni, l'Associazione si dedica al progetto "La Stregoneria nelle Alpi Occidentali", che ha ottenuto il patrocinio di numerose province, città e comuni, e ha costituito il Centro Studi e Ricerche sulla Stregoneria in Piemonte, presieduto da Sandy Furlini e con Katia Somà come segretaria. L'obiettivo è quello di approfondire la conoscenza storico-antropologica sulla stregoneria nella regione, creare un archivio storico locale e promuovere la conoscenza del tema attraverso incontri e convegni.</p>
+              <a class="main-btn text-decoration-none">Scopri altro</a>
+            </div>
+          </div>
+      </section>
+
+      <section class="bg-pearl py-5" id="projects">
+        <div class="container all-centered flex-column">
+          <h2 class="font-title">Progetti</h2>
+          <div class="row gx-4 gx-lg-5">
+            <div data-aos="fade-up" class="col-md-6">
+              <div class="mt-5">
+                <img class="img-ratio169 mb-4 w-100 object-fit-cover round" src="images/proxy.jpg" alt="600x350">
+                <h3 class="mb-2">Progetto 1</h3>
+                <p class="mb-4 lh-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus iusto perspiciatis deleniti optio ducimus sit, doloribus molestiae adipisci reprehenderit debitis libero? Incidunt totam neque modi nisi nulla consectetur quos deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sed distinctio, laudantium nam quidem doloremque, debitis obcaecati soluta earum molestias assumenda ex reiciendis pariatur maiores blanditiis. Itaque eos quae atque.</p>
+                <a class="main-btn text-decoration-none">Scopri di più</a> <a class="main-btn"><i class="fa-solid fa-calendar-days"></i></a> <a href="gallery.html" class="main-btn"><i class="fa-solid fa-camera"></i></a>
+              </div>
+            </div>
+            <div data-aos="fade-up" class="col-md-6">
+              <div class="mt-5">
+                <img class="img-ratio169 mb-4 w-100 object-fit-cover round" src="images/proxy (1).jpg" alt="600x350">
+                <h3 class="mb-2">Progetto 2</h3>
+                <p class="mb-4 lh-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus iusto perspiciatis deleniti optio ducimus sit, doloribus molestiae adipisci reprehenderit debitis libero? Incidunt totam neque modi nisi nulla consectetur quos deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sed distinctio, laudantium nam quidem doloremque, debitis obcaecati soluta earum molestias assumenda ex reiciendis pariatur maiores blanditiis. Itaque eos quae atque.</p>
+                <a class="main-btn text-decoration-none">Scopri di più</a> <a class="main-btn"><i class="fa-solid fa-calendar-days"></i></a> <a href="gallery.html" class="main-btn"><i class="fa-solid fa-camera"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="row gx-4 gx-lg-5">
+            <div data-aos="fade-up" class="col-md-6">
+              <div class="mt-5">
+                <img class="img-ratio169 mb-4 w-100 object-fit-cover round" src="images/proxy.jpg" alt="600x350">
+                <h3 class="mb-2">Progetto 1</h3>
+                <p class="mb-4 lh-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus iusto perspiciatis deleniti optio ducimus sit, doloribus molestiae adipisci reprehenderit debitis libero? Incidunt totam neque modi nisi nulla consectetur quos deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sed distinctio, laudantium nam quidem doloremque, debitis obcaecati soluta earum molestias assumenda ex reiciendis pariatur maiores blanditiis. Itaque eos quae atque.</p>
+                <a class="main-btn text-decoration-none">Scopri di più</a> <a class="main-btn"><i class="fa-solid fa-calendar-days"></i></a> <a href="gallery.html" class="main-btn"><i class="fa-solid fa-camera"></i></a>
+              </div>
+            </div>
+            <div data-aos="fade-up" class="col-md-6">
+              <div class="mt-5">
+                <img class="img-ratio169 mb-4 w-100 object-fit-cover round" src="images/proxy (1).jpg" alt="600x350">
+                <h3 class="mb-2">Progetto 2</h3>
+                <p class="mb-4 lh-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus iusto perspiciatis deleniti optio ducimus sit, doloribus molestiae adipisci reprehenderit debitis libero? Incidunt totam neque modi nisi nulla consectetur quos deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sed distinctio, laudantium nam quidem doloremque, debitis obcaecati soluta earum molestias assumenda ex reiciendis pariatur maiores blanditiis. Itaque eos quae atque.</p>
+                <a class="main-btn text-decoration-none">Scopri di più</a> <a class="main-btn"><i class="fa-solid fa-calendar-days"></i></a> <a href="gallery.html" class="main-btn"><i class="fa-solid fa-camera"></i></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="img-fluid" src="https://via.placeholder.com/700x400" alt="700x400"></a>
-            <div class="my-3 mx-1">
-              <h4 class="card-title"><a class="card-title" href="#">Evento 2</a></h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
+      </section>
+
+      <section class="bg-pearl py-5" id="events">
+        <div class="container all-centered flex-column">
+          <h2>Eventi</h2>
+          <div data-aos="fade-up" class="row py-5">
+            <div class="col-lg-6">
+              <img class="w-100 h-100 object-fit-cover round" src="images/proxy.jpg" alt="Image">
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-lg-start">
+              <h3 class="font-title mt-lg-0 mt-3">Evento 1</h3>
+              <div class="d-flex">
+                <span class="mb-2 fw-bolder">26/02/2023</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, voluptatem. Amet maxime voluptatum error illo doloribus? Cum eius distinctio est ex repellendus molestiae sit quisquam suscipit. Id, voluptatem temporibus? Unde sit fuga corporis, neque rem, minima tenetur facere dolorum enim nulla officia, sequi nesciunt deleniti! Molestiae, mollitia. Maiores, atque fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis incidunt facilis id sapiente accusamus excepturi natus, fuga nemo, a, maiores dolore ipsum optio pariatur. Quas at sapiente odit? Voluptas, iste! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae.</p>
+              <a class="main-btn text-decoration-none">Scopri altro</a>
             </div>
           </div>
+          <div data-aos="fade-up" class="row py-5">
+            <div class="col-lg-6">
+              <img class="w-100 h-100 object-fit-cover round" src="images/proxy.jpg" alt="Image">
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-lg-start">
+              <h3 class="font-title mt-lg-0 mt-3">Evento 2</h3>
+              <div class="d-flex">
+                <span class="mb-2 fw-bolder">26/02/2023</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, voluptatem. Amet maxime voluptatum error illo doloribus? Cum eius distinctio est ex repellendus molestiae sit quisquam suscipit. Id, voluptatem temporibus? Unde sit fuga corporis, neque rem, minima tenetur facere dolorum enim nulla officia, sequi nesciunt deleniti! Molestiae, mollitia. Maiores, atque fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis incidunt facilis id sapiente accusamus excepturi natus, fuga nemo, a, maiores dolore ipsum optio pariatur. Quas at sapiente odit? Voluptas, iste! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, recusandae.</p>
+              <a class="main-btn text-decoration-none">Scopri altro</a>
+            </div>
+          </div>
+      </section>
+
+      
+<div id="contacts" class="container-fluid py-5 bg-pearl">
+  <div data-aos="fade-up" class="row text-center">
+    <h2 class="font-title mb-3">Contattaci</h2>
+     <div class="col-sm-6 col-lg-3 py-5">
+        <div class="lc-block mb-5">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="2em" height="2em" lc-helper="svg-icon" fill="#A6BB8D">
+              <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+           </svg>
         </div>
-        <h3 class="my-4">Altri progetti</h3>
-        <div class="row mt-5 d-flex">
-          <div class="col-lg-3 col-sm-6 col-12 mb-4">
-            <a href="#"><img class="img-fluid" src="https://via.placeholder.com/500x300" alt="500x300">
-            <h4 class="mx-1 my-2 card-title">Progetto 1</h4>
-            <p class="mx-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A autem voluptate recusandae nesciunt nihil. Fugit.</p></a>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-12 mb-4">
-            <a href="#"><img class="img-fluid" src="https://via.placeholder.com/500x300" alt="500x300">
-            <h4 class="mx-1 my-2 card-title">Progetto 2</h4>
-            <p class="mx-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A autem voluptate recusandae nesciunt nihil. Fugit.</p></a>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-12 mb-4">
-            <a href="#"><img class="img-fluid" src="https://via.placeholder.com/500x300" alt="500x300">
-            <h4 class="mx-1 my-2 card-title">Progetto 3</h4>
-            <p class="mx-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A autem voluptate recusandae nesciunt nihil. Fugit.</p></a>
-          </div>
-          <div class="col-lg-3 col-sm-6 col-12 mb-4">
-            <a href="#"><img class="img-fluid" src="https://via.placeholder.com/500x300" alt="500x300">
-            <h4 class="mx-1 my-2 card-title">Progetto 4</h4>
-            <p class="mx-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A autem voluptate recusandae nesciunt nihil. Fugit.</p></a>
-          </div>
+        <div class="lc-block mb-4">
+           <div editable="rich">
+              <p><a href="#" class="h4 color-lg text-decoration-none">Facebook</a></p>
+           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="page-section" id="contact">
-    <div class="container px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-8 col-xl-6 text-center mt-5 mb-3">
-          <h2>Contattaci</h2>
-          <hr class="divider">
+        <div class="lc-block col-2 offset-5 border-bottom border-2 border-lg">
+           <div editable="rich">
+           </div>
         </div>
-      </div>
-      <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-        <div class="col-lg-6">
-          <form id="contactForm" data-sb-form-api-token="API_TOKEN" name="contactForm">
-            <div class="form-floating mb-3">
-              <input class="form-control" id="name" type="text" placeholder="Mario" data-sb-validations="required"> <label for="name">Nome</label>
-              <div class="invalid-feedback" data-sb-feedback="name:required">
-                Completa questo campo con un nome.
-              </div>
-            </div>
-            <div class="form-floating mb-3">
-              <input class="form-control" id="email" type="email" placeholder="nome@esempio.com" data-sb-validations="required,email"> <label for="email">E-mail</label>
-              <div class="invalid-feedback" data-sb-feedback="email:required">
-                Completa questo campo con una E-mail.
-              </div>
-              <div class="invalid-feedback" data-sb-feedback="email:email">
-                E-mail non valida.
-              </div>
-            </div>
-            <div class="form-floating mb-3">
-              <input class="form-control" id="phone" type="tel" placeholder="(+39) 111 222 3333" data-sb-validations="required"> <label for="phone">Numero di telefono</label>
-              <div class="invalid-feedback" data-sb-feedback="phone:required">
-                Completa questo campo con un numero di telefono.
-              </div>
-            </div>
-            <div class="form-floating mb-3">
-              <textarea class="form-control" id="message" type="text" placeholder="Messaggio..." style="height: 10rem" data-sb-validations="required"></textarea> <label for="message">Messaggio</label>
-              <div class="invalid-feedback" data-sb-feedback="message:required">
-                Completa questo campo con un messaggio.
-              </div>
-            </div>
-            <div class="d-none" id="submitSuccessMessage">
-              <div class="text-center mb-3">
-                <div class="fw-bolder">
-                  Mail mandata correttamente!
-                </div><!--To activate this form, sign up at<br>
-                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>-->
-              </div>
-            </div>
-            <div class="d-none" id="submitErrorMessage">
-              <div class="text-center text-danger mb-3">
-                Impossibile mandare la mail, riprova tra qualche istante...
-              </div>
-            </div>
-            <div class="d-grid">
-              <button class="btn btn-primary disabled" id="submitButton" type="submit">Spedisci</button>
-            </div>
-          </form>
+     </div>
+     <div class="col-sm-6 col-lg-3 py-5">
+        <div class="lc-block mb-5">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="2em" height="2em" lc-helper="svg-icon" fill="#A6BB8D">
+              <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+           </svg>
         </div>
-      </div>
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-        <div class="col-lg-4 text-center mb-5 mb-lg-0">
-          <div class="mb-5">
-            +39 xxx xxx xxxx
-          </div>
+        <div class="lc-block mb-4">
+           <div editable="rich">
+              <p><a href="#" class="h4 color-lg text-decoration-none">Linkedin</a></p>
+           </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <footer class="py-5">
-    <div class="container px-4 px-lg-5">
-      <div class="small text-center text-muted">
-        Copyright © 2022 - Sandy Furlini - Matteo Migliarese
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script> 
-  <script src="js/scripts.js"></script> 
-  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-</body>
+        <div class="lc-block col-2 offset-5 border-bottom border-2 border-lg">
+           <div editable="rich">
+           </div>
+        </div>
+     </div>
+     <div class="col-sm-6 col-lg-3 py-5">
+        <div class="lc-block mb-5">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="2em" height="2em" lc-helper="svg-icon" fill="#A6BB8D">
+              <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+           </svg>
+        </div>
+        <div class="lc-block mb-4">
+           <div editable="rich">
+              <p><a href="#" class="h4 color-lg text-decoration-none">Twitter</a></p>
+           </div>
+        </div>
+        <div class="lc-block col-2 offset-5 border-bottom border-2 border-lg">
+           <div editable="rich">
+           </div>
+        </div>
+     </div>
+     <div class="col-sm-6 col-lg-3 py-5">
+        <div class="lc-block mb-5">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="2em" height="2em" lc-helper="svg-icon" fill="#A6BB8D">
+              <path d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z"></path>
+           </svg>
+        </div>
+        <div class="lc-block mb-4">
+           <div editable="rich">
+              <p><a href="#" class="h4 color-lg text-decoration-none">Dribble</a></p>
+           </div>
+        </div>
+        <div class="lc-block col-2 offset-5 border-bottom border-2 border-lg">
+           <div editable="rich">
+           </div>
+        </div>
+     </div>
+  </div>
+</div>
+      
+    <!--JavaScript Bootstrap Libraries-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!--JavaScript FA Libraries-->
+    <script src="https://kit.fontawesome.com/2a54c3be4d.js" crossorigin="anonymous"></script>
+
+    <!--JavaScript AOS Libraries-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
