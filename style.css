@@ -5,6 +5,7 @@
   --brown: #b6977ed0;
   --pearl: #ebe8bd;
   --black: #000;
+  --darkgrey: #333330;
 }
 
 * {
@@ -258,6 +259,10 @@ html body .main-btn:active {
 
 .color-lg {
   color: var(--lightgreen);
+}
+
+.color-dg {
+  color: var(--darkgrey);
 }
 
 .border-lg {
