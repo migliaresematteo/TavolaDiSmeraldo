@@ -3,7 +3,7 @@
   --green: #61876E;
   --lightgreen: #A6BB8D;
   --brown: #b6977ed0;
-  --pearl: #f9f8e7;
+  --pearl: #ebe8bd;
   --black: #000;
 }
 
@@ -209,7 +209,7 @@ html body .main-btn:active {
     font-size: 0.9rem !important;
   }
   .main-btn:hover {
-    padding: 0.4rem 2.5rem;
+    padding: 0.6rem 2.5rem;
   }
   .header-paragraph {
     font-size: 0.9rem;
@@ -220,8 +220,8 @@ html body .main-btn:active {
     width: 45px;
   }
   .main-btn {
-    padding: 0.4rem 1.5rem;
-    font-size: 0.7rem !important;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem !important;
   }
   .main-btn:hover {
     padding: 0.4rem 2.5rem;
