@@ -5,7 +5,7 @@
   --brown: #b6977ed0;
   --pearl: #f0eece;
   --black: #000;
-  --darkgrey: #333330;
+  --darkgrey: #3a3a36;
 }
 
 * {
@@ -206,7 +206,7 @@ html body .main-btn:active {
     width: 45px;
   }
   .main-btn {
-    padding: 0.4rem 1.5rem;
+    padding: 0.6rem 1.5rem;
     font-size: 0.9rem !important;
   }
   .main-btn:hover {
@@ -221,11 +221,11 @@ html body .main-btn:active {
     width: 45px;
   }
   .main-btn {
-    padding: 0.6rem 1.5rem;
+    padding: 0.8rem 1.5rem;
     font-size: 0.8rem !important;
   }
   .main-btn:hover {
-    padding: 0.4rem 2.5rem;
+    padding: 0.8rem 2.5rem;
   }
   .header-paragraph {
     font-size: 0.7rem;
