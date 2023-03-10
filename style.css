@@ -1,7 +1,7 @@
 :root {
   --darkgreen: #3C6255;
   --green: #61876E;
-  --lightgreen: #A6BB8D;
+  --lightgreen: #97b86d;
   --brown: #b6977ed0;
   --pearl: #f0eece;
   --black: #000;
@@ -18,6 +18,10 @@
 
 ::-webkit-scrollbar {
   width: 0;
+}
+
+:target {
+  scroll-margin-top: 5rem;
 }
 
 html {
@@ -169,6 +173,9 @@ html body .main-btn:hover {
 html body .main-btn:active {
   box-shadow: 0 0 0 0 transparent;
 }
+html .fa-brands {
+  font-size: 2.75rem;
+}
 
 /* Media queries */
 @media (min-width: 992px) {
@@ -176,10 +183,13 @@ html body .main-btn:active {
     background-color: transparent !important;
   }
   .navbar-brand {
-    width: 50px;
+    width: 4rem;
   }
   .header-title {
-    font-size: 3.5rem;
+    font-size: 4rem;
+  }
+  .header-paragraph {
+    font-size: 1.75rem;
   }
   .main-btn {
     padding: 0.5rem 1.5rem;
@@ -191,7 +201,13 @@ html body .main-btn:active {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-brand {
-    width: 50px;
+    width: 4rem;
+  }
+  .header-title {
+    font-size: 4rem;
+  }
+  .header-paragraph {
+    font-size: 1.75rem;
   }
   .main-btn {
     padding: 0.4rem 1.5rem;
@@ -203,7 +219,13 @@ html body .main-btn:active {
 }
 @media (max-width: 767px) {
   .navbar-brand {
-    width: 45px;
+    width: 3rem;
+  }
+  .header-title {
+    font-size: 3rem;
+  }
+  .header-paragraph {
+    font-size: 1.25rem;
   }
   .main-btn {
     padding: 0.6rem 1.5rem;
@@ -212,13 +234,10 @@ html body .main-btn:active {
   .main-btn:hover {
     padding: 0.6rem 2.5rem;
   }
-  .header-paragraph {
-    font-size: 0.9rem;
-  }
 }
 @media (max-width: 480px) {
   .navbar-brand {
-    width: 45px;
+    width: 3rem;
   }
   .main-btn {
     padding: 0.8rem 1.5rem;
@@ -227,8 +246,11 @@ html body .main-btn:active {
   .main-btn:hover {
     padding: 0.8rem 2.5rem;
   }
+  .header-title {
+    font-size: 2rem;
+  }
   .header-paragraph {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   .nav-item {
     padding: 0.5rem 0 !important;
