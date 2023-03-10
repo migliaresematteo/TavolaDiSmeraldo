@@ -1,7 +1,7 @@
 :root {
   --darkgreen: #3C6255;
   --green: #61876E;
-  --lightgreen: #97b86d;
+  --lightgreen: #7cb663;
   --brown: #b6977ed0;
   --pearl: #f0eece;
   --black: #000;
@@ -181,6 +181,12 @@ html .fa-brands {
 @media (min-width: 992px) {
   #mainNav {
     background-color: transparent !important;
+  }
+  li > a, i {
+    color: var(--pearl) !important;
+  }
+  .navbar-shrink li > a, .navbar-shrink i {
+    color: var(--lightgreen) !important;
   }
   .navbar-brand {
     width: 4rem;
