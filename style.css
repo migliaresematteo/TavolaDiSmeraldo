@@ -182,7 +182,7 @@ html .fa-brands {
   #mainNav {
     background-color: transparent !important;
   }
-  li > a, i {
+  li > a, li > i {
     color: var(--pearl) !important;
   }
   .navbar-shrink li > a, .navbar-shrink i {
