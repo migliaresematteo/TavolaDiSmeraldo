@@ -25,9 +25,8 @@
   scroll-margin-top: 5rem;
 }
 
-:focus, :active {
-  border: 0;
-  outline: 0;
+.accordion-button:not(.collapsed) {
+  color: var(--lightgreen);
 }
 
 html {
